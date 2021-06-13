@@ -8,7 +8,7 @@ int main()
 	for(int i=2;i<=sqrt(n);i++)
 		if (n%i==0) check=0;
 	if(check==1) printf("La so nguyen to");
-	else printf("Khong phai la so nguyen to"); 	
+	else printf("Khong phai so nguyen to"); 	
 	return 0;
 }
 
