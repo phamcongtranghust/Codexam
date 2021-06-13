@@ -11,19 +11,22 @@ if(a==0)
 		if(c==0) printf("Phuong trinh vo so nghiem");
 			else printf("Phuong trinh vo nghiem");
 	} 
-	else printf("Phuong trinh co nghiem duy nhat %f",-(c+0.0)/b);
+	else printf("%f",-c/b);
 }
 else 
 {
 	delta=b*b-4*a*c;
-	if (delta<0) printf("Phuong trinh co nghiem phuc");
-	if (delta==0) printf("Phuong trinh co nghiem kep: %f %f",-b/(2.0*a));
+	if (delta==0) printf("%f %f",-b/(2*a),-b/2/a);
 	if (delta>0)
 	{
 		delta=sqrt(delta);
-		printf("Phuong trinh co 2 nghiem phan biet: %f %f",(-b+delta)/(2.0*a),(-b-delta)/(2.0*a));
+		printf("%f %f",(-b+delta)/(2*a),(-b-delta)/(2*a));
+	}
+	if (delta<0) 
+	{
+		delta=sqrt(-delta);
+		printf("%f+%fi %f-%fi",-b/2/a,delta/2,-b/2/a,delta/2);
 	}
 }
 return 0;
 }
-
