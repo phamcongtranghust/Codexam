@@ -15,7 +15,7 @@ while(b!=0)
 	a=b;
 	b=r;
 }
-printf("%d %d",a,tich/a);
+printf("%d\n%d",a,tich/a);
 return 0;
 }
 
