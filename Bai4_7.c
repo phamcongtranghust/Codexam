@@ -4,10 +4,10 @@ int main()
 {
 	int n,i,gt;
 	float x,mu,s1,s2,s3,s4;
-	scanf("%d %f",&n,&x);
+	scanf("%f %d",&x,&n);
 	if(n<1||x<0)
 	{
-		printf("ERROR");
+		printf("Error");
 		return 0;
 	}
 	s1=0; s2=1;s3=1;s4=1;mu=1;gt=1;
